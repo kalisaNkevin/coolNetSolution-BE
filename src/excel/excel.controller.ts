@@ -3,8 +3,8 @@ import { ApiTags, ApiResponse } from '@nestjs/swagger';
 import { Response } from 'express';
 import { ExcelService } from './excel.service';
 
-@ApiTags('EXCEL')
-@Controller('excel')
+@Controller('/v1/excel')
+@ApiTags('EXCEL generate')
 export class ExcelController {
   constructor(private readonly excelService: ExcelService) {}
 
